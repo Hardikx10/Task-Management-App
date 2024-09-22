@@ -50,7 +50,7 @@ const CreateTaskModal = ({ fetchTasks }: CreateTaskModalProps) => {
 
       // API POST request
       const response = await axios.post(
-        'http://localhost:5000/api/tasks/', // Endpoint for creating a task
+        'https://task-be-f76c73db93ff.herokuapp.com/api/tasks/', // Endpoint for creating a task
         {
           title,
           description,
