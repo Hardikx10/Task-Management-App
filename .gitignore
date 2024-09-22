@@ -1,0 +1,44 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+dist/
+build/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js
+.next/
+out/
+*.log
+
+# React
+public/static/
+public/favicon.ico
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# Logs
+logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Build directories
+coverage/
+*.tgz
+
+# Miscellaneous
+*.pem
+*.key
+*.p12
+*.cer

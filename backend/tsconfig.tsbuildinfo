@@ -1,0 +1,1 @@
+{"root":["./src/server.ts","./src/middlewares/authmiddleware.ts","./src/models/task.ts","./src/models/user.ts","./src/routes/auth.ts","./src/routes/tasks.ts","./src/types/tasktype.ts","./src/types/usertype.ts"],"version":"5.6.2"}
