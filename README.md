@@ -53,13 +53,18 @@ To run this project, you'll need the following installed on your system:
 
 3. Set up environment variables:
 
-   Create a `.env` file in the root directory and add your MongoDB connection string, JWT secret, and other required configurations:
+   Create a `.env` file in the backend directory and add your MongoDB connection string, JWT secret, and other required configurations:
 
    ```
-   MONGO_URI=your-mongodb-connection-string
+   DATABASE_URL=your-mongodb-connection-string
    JWT_SECRET=your-jwt-secret
-   NEXT_PUBLIC_API_URL=https://your-backend-url.com
+   
    ```
+   Create a `.env` file in the frontend directory and add your backend API URL:
+
+    BACKEND_URL=your backend deployed url 
+
+    
 
 4. Run the project locally:
 
@@ -73,11 +78,13 @@ To run this project, you'll need the following installed on your system:
    yarn dev
    ```
 
-   Your app will be available at `http://localhost:3000`.
+   Your frontend will be available at `http://localhost:3000`.
 
 5. Backend setup:
 
    If you are using the provided Express backend, make sure to set up your server repository. Install the necessary dependencies, and provide the MongoDB connection string and JWT secret.
+   
+   Your backend will be available at `http://localhost:5000`.
 
 ## Project Structure
 
