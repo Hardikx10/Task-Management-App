@@ -129,9 +129,9 @@ const EditTaskModal = ({ task, fetchTasks, closeModal }: EditTaskModalProps) => 
                   <SelectValue placeholder="Select status" className='text-gray-900' />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="To Do">To Do</SelectItem>
-                  <SelectItem value="In Progress">In Progress</SelectItem>
-                  <SelectItem value="Completed">Completed</SelectItem>
+                  <SelectItem value="To Do" className='text-gray-900'>To Do</SelectItem>
+                  <SelectItem value="In Progress" className='text-gray-900'>In Progress</SelectItem>
+                  <SelectItem value="Completed" className='text-gray-900'>Completed</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -145,9 +145,9 @@ const EditTaskModal = ({ task, fetchTasks, closeModal }: EditTaskModalProps) => 
                   <SelectValue placeholder="Select priority" className='text-gray-900' />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="Low">Low</SelectItem>
-                  <SelectItem value="Medium">Medium</SelectItem>
-                  <SelectItem value="High">High</SelectItem>
+                  <SelectItem value="Low" className='text-gray-900'>Low</SelectItem>
+                  <SelectItem value="Medium" className='text-gray-900'>Medium</SelectItem>
+                  <SelectItem value="High" className='text-gray-900'>High</SelectItem>
                 </SelectContent>
               </Select>
             </div>

@@ -179,11 +179,12 @@ const Dashboard = () => {
             </Button>
             <CreateTaskModal fetchTasks={fetchTasks} />
             <Button
-              onClick={handleLogout}
-              className="bg-red-600 hover:bg-red-700 text-white shadow-md rounded-md"
-            >
-              Logout
-            </Button>
+                onClick={handleLogout}
+                className="bg-red-500 hover:bg-red-700 text-white shadow-md rounded-md text-sm px-3 py-1"
+              >
+                Logout
+              </Button>
+
           </div>
         </div>
 
