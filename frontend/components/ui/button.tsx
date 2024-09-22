@@ -11,6 +11,7 @@ const buttonVariants = cva(
         destructive: 'text-white hover:bg-red-700',
         success: 'border border-input bg-green-600 text-white hover:bg-green-700',
         outline: 'border border-input bg-accent text-black hover:bg-gray-300',
+        ghost: 'bg-transparent text-black hover:bg-gray-300',
       },
       size: {
         sm: 'h-10 px-4 text-base',  // Small button
