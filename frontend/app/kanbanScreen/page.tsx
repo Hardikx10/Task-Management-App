@@ -49,6 +49,14 @@ const KanbanScreen = () => {
   });
   const router = useRouter();
   const dragItemsRef = useRef<{ [key: string]: Task }>({});
+  
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      // If no token, redirect to login page
+      router.push("/auth/login");
+    }
+}, [router]);
 
   useEffect(() => {
     fetchTasks();

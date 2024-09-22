@@ -101,7 +101,7 @@ const EditTaskModal = ({ task, fetchTasks, closeModal }: EditTaskModalProps) => 
                 placeholder="Enter task title"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
-                className="w-full border-indigo-200 focus:border-indigo-500 focus:ring-indigo-500"
+                className="w-full border-indigo-200 text-gray-900 focus:border-indigo-500 focus:ring-indigo-500"
                 required
               />
             </div>
@@ -115,7 +115,7 @@ const EditTaskModal = ({ task, fetchTasks, closeModal }: EditTaskModalProps) => 
                 placeholder="Enter task description"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
-                className="w-full border-indigo-200 focus:border-indigo-500 focus:ring-indigo-500"
+                className="w-full border-indigo-200 text-gray-900 focus:border-indigo-500 focus:ring-indigo-500"
                 required
               />
             </div>
@@ -126,7 +126,7 @@ const EditTaskModal = ({ task, fetchTasks, closeModal }: EditTaskModalProps) => 
               </Label>
               <Select value={status} onValueChange={(value) => setStatus(value as "To Do" | "In Progress" | "Completed")}>
                 <SelectTrigger className="w-full border-indigo-200 focus:border-indigo-500 focus:ring-indigo-500">
-                  <SelectValue placeholder="Select status" />
+                  <SelectValue placeholder="Select status" className='text-gray-900' />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="To Do">To Do</SelectItem>
@@ -142,7 +142,7 @@ const EditTaskModal = ({ task, fetchTasks, closeModal }: EditTaskModalProps) => 
               </Label>
               <Select value={priority} onValueChange={(value) => setPriority(value as "Low" | "Medium" | "High")}>
                 <SelectTrigger className="w-full border-indigo-200 focus:border-indigo-500 focus:ring-indigo-500">
-                  <SelectValue placeholder="Select priority" />
+                  <SelectValue placeholder="Select priority" className='text-gray-900' />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="Low">Low</SelectItem>

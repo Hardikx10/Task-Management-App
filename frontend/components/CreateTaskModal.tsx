@@ -114,13 +114,13 @@ const CreateTaskModal = ({ fetchTasks }: CreateTaskModalProps) => {
                   placeholder="Enter task title"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
-                  className="w-full border-indigo-200 focus:border-indigo-500 focus:ring-indigo-500"
+                  className="w-full border-indigo-200 text-gray-900 focus:border-indigo-500 focus:ring-indigo-500"
                   required
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="description" className="text-sm font-medium text-indigo-700">
+                <Label htmlFor="description" className="text-sm text-gray-900 font-medium text-indigo-700">
                   Description
                 </Label>
                 <Input
@@ -139,7 +139,7 @@ const CreateTaskModal = ({ fetchTasks }: CreateTaskModalProps) => {
                 </Label>
                 <Select value={status} onValueChange={setStatus}>
                   <SelectTrigger className="w-full border-indigo-200 focus:border-indigo-500 focus:ring-indigo-500">
-                    <SelectValue placeholder="Select status" />
+                    <SelectValue placeholder="Select status" className='text-gray-900'/>
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="To Do">To Do</SelectItem>
@@ -155,7 +155,7 @@ const CreateTaskModal = ({ fetchTasks }: CreateTaskModalProps) => {
                 </Label>
                 <Select value={priority} onValueChange={setPriority}>
                   <SelectTrigger className="w-full border-indigo-200 focus:border-indigo-500 focus:ring-indigo-500">
-                    <SelectValue placeholder="Select priority" />
+                    <SelectValue placeholder="Select priority" className='text-gray-900'/>
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="Low">Low</SelectItem>
@@ -179,7 +179,7 @@ const CreateTaskModal = ({ fetchTasks }: CreateTaskModalProps) => {
                       )}
                     >
                       <CalendarIcon className="mr-2 h-4 w-4" />
-                      {dueDate ? format(dueDate, "PPP") : <span>Pick a date</span>}
+                      {dueDate ? format(dueDate, "PPP") : <span className='text-gray-900'>Pick a date</span>}
                     </Button>
                   </PopoverTrigger>
                   <PopoverContent className="w-auto p-0 bg-white">

@@ -51,7 +51,7 @@ const LoginPage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-50">
       <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
-        <h2 className="text-3xl font-bold text-center mb-6">Login</h2>
+        <h2 className="text-3xl font-bold text-center mb-6 text-gray-900">Login</h2>
 
         {/* Show error message if it exists */}
         {error && (

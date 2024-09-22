@@ -47,7 +47,15 @@ const Dashboard = () => {
   const [sort, setSort] = useState("");
 
   const router = useRouter();
-
+  
+  useEffect(() => {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        // If no token, redirect to login page
+        router.push("/auth/login");
+      }
+  }, [router]);
+  
   const fetchTasks = async () => {
     try {
       setIsLoading(true);
@@ -121,6 +129,10 @@ const Dashboard = () => {
   const handleSortChange = (newSort: string) => {
     setSort(newSort);
   };
+  const handleLogout = () => {
+    localStorage.removeItem("token"); // Clear token
+    router.push("/"); // Redirect to home page
+  };
 
   const getPriorityColor = (priority: string) => {
     switch (priority) {
@@ -166,6 +178,12 @@ const Dashboard = () => {
               Kanban View
             </Button>
             <CreateTaskModal fetchTasks={fetchTasks} />
+            <Button
+              onClick={handleLogout}
+              className="bg-red-600 hover:bg-red-700 text-white shadow-md rounded-md"
+            >
+              Logout
+            </Button>
           </div>
         </div>
 
