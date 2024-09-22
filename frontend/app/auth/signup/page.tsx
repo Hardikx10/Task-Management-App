@@ -41,7 +41,7 @@ const SignupPage = () => {
     if(isAuthenticated){
       console.log("change");
       
-      router.push('http://localhost:3000/dashboard')
+      router.push('https://task-management-app-alpha-livid.vercel.app/dashboard')
     }
 
   },[isAuthenticated,router])
