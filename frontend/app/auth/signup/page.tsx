@@ -19,7 +19,7 @@ const SignupPage = () => {
     e.preventDefault()
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/signup', { email, password });
+      const response = await axios.post('https://task-be-f76c73db93ff.herokuapp.com/api/auth/signup', { email, password });
       const token = response.data.token;
       setError("");
       localStorage.setItem('token', token);

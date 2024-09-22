@@ -76,7 +76,7 @@ const KanbanScreen = () => {
   const fetchTasks = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get("http://localhost:5000/api/tasks/", {
+      const response = await axios.get("https://task-be-f76c73db93ff.herokuapp.com/api/tasks/", {
         headers: {
           Authorization: `${token}`,
         },
@@ -91,7 +91,7 @@ const KanbanScreen = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        `http://localhost:5000/api/tasks/${taskId}`,
+        `https://task-be-f76c73db93ff.herokuapp.com/api/tasks/${taskId}`,
         { status: newStatus },
         {
           headers: { Authorization: `${token}` },
