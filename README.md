@@ -20,6 +20,28 @@ This project is a Task Management Dashboard built with Next.js, Tailwind CSS, an
 - **Real-Time Updates**: Axios for HTTP requests
 - **Deployment**: Vercel (Frontend), Heroku (Backend)
 
+## Screenshots 
+
+- Home Page
+
+![task Home](https://github.com/Hardikx10/Task-Management-App/blob/master/frontend/images/taskHome.png?raw=true)
+
+- Login Page
+
+![login Page](https://github.com/Hardikx10/Task-Management-App/blob/master/frontend/images/loginTask.png?raw=true)
+
+- Signup Page
+
+![Signup Page](https://github.com/Hardikx10/Task-Management-App/blob/master/frontend/images/signUpTask.png?raw=true)
+
+- Task Dashboard
+
+![DashBoard Page](https://github.com/Hardikx10/Task-Management-App/blob/master/frontend/images/taskDashboard.png?raw=true)
+
+- Kanban Screen
+
+![Kanban Board](https://github.com/Hardikx10/Task-Management-App/blob/master/frontend/images/kanban.png?raw=true)
+
 ## Getting Started
 
 ### Prerequisites
