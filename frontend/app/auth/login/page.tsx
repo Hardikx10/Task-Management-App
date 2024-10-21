@@ -20,7 +20,7 @@ const LoginPage = () => {
     e.preventDefault()
 
     try {
-      const response = await axios.post('https://task-be-f76c73db93ff.herokuapp.com/api/auth/login', { email, password });
+      const response = await axios.post('https://task-management-be-o3vs.onrender.com/api/auth/login', { email, password });
       const token = response.data.token;
       setError("");
       localStorage.setItem('token', token);
