@@ -60,7 +60,7 @@ const Dashboard = () => {
     try {
       setIsLoading(true);
       const token = localStorage.getItem("token");
-      const response = await axios.get("https://task-be-f76c73db93ff.herokuapp.com/api/tasks/", {
+      const response = await axios.get("https://task-management-be-o3vs.onrender.com/api/tasks/", {
         headers: {
           Authorization: `${token}`,
         },
@@ -77,7 +77,7 @@ const Dashboard = () => {
   const handleDelete = async (taskId: string) => {
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`https://task-be-f76c73db93ff.herokuapp.com/api/tasks/${taskId}`, {
+      await axios.delete(`https://task-management-be-o3vs.onrender.com/api/tasks/${taskId}`, {
         headers: {
           Authorization: `${token}`,
         },
