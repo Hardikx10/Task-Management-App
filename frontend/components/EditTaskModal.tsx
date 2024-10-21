@@ -58,7 +58,7 @@ const EditTaskModal = ({ task, fetchTasks, closeModal }: EditTaskModalProps) => 
       }
 
       const response = await axios.put(
-        `https://task-be-f76c73db93ff.herokuapp.com/api/tasks/${task._id}`, // Endpoint for updating the task
+        `https://task-management-be-o3vs.onrender.com/api/tasks/${task._id}`, // Endpoint for updating the task
         {
           title,
           description,
